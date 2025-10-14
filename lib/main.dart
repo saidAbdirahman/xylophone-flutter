@@ -9,14 +9,61 @@ class XylophoneApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Center(
-            child: TextButton(
-              onPressed: (){
-                final player = AudioPlayer();
-                 player.play(AssetSource('note1.wav'));
-              },
-              child: Text("text"),
-            ),
+          child: Column(
+            children: [
+              TextButton(
+                style: ButtonStyle(
+
+                ),
+                onPressed: (){
+                  final player = AudioPlayer();
+                   player.play(AssetSource('note1.wav'));
+                },
+                child: Text("Song1"),
+              ),
+              TextButton(
+                onPressed: (){
+                  final player = AudioPlayer();
+                  player.play(AssetSource('note2.wav'));
+                },
+                child: Text("Song2"),
+              ),
+              TextButton(
+                onPressed: (){
+                  final player = AudioPlayer();
+                  player.play(AssetSource('note3.wav'));
+                },
+                child: Text("Song3"),
+              ),
+              TextButton(
+                onPressed: (){
+                  final player = AudioPlayer();
+                  player.play(AssetSource('note4.wav'));
+                },
+                child: Text("Song4"),
+              ),
+              TextButton(
+                onPressed: (){
+                  final player = AudioPlayer();
+                  player.play(AssetSource('note5.wav'));
+                },
+                child: Text("Song5"),
+              ),
+              TextButton(
+                onPressed: (){
+                  final player = AudioPlayer();
+                  player.play(AssetSource('note6.wav'));
+                },
+                child: Text("Song6"),
+              ),
+              TextButton(
+                onPressed: (){
+                  final player = AudioPlayer();
+                  player.play(AssetSource('note7.wav'));
+                },
+                child: Text("Song7"),
+              ),
+            ],
           ),
         ),
       ),
