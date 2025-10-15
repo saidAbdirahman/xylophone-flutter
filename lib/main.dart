@@ -5,9 +5,9 @@ void main() => runApp(XylophoneApp());
 
 class XylophoneApp extends StatelessWidget {
 
-  void playSound(){
+  void playSound(sound){
     final player = AudioPlayer();
-    player.play(AssetSource('note1.wav'));
+    player.play(AssetSource(sound));
   }
 
   @override
@@ -23,8 +23,7 @@ class XylophoneApp extends StatelessWidget {
                   backgroundColor: Colors.red
                 ),
                 onPressed: (){
-                  final player = AudioPlayer();
-                   player.play(AssetSource('note1.wav'));
+                  playSound('note1.wav');
                 },
                 child: Text("Song1"),
               ),
