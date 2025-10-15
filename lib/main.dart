@@ -32,8 +32,7 @@ class XylophoneApp extends StatelessWidget {
                     backgroundColor: Colors.yellow
                 ),
                 onPressed: (){
-                  final player = AudioPlayer();
-                  player.play(AssetSource('note2.wav'));
+                  playSound('note2.wav');
                 },
                 child: Text("Song2"),
               ),
@@ -42,8 +41,7 @@ class XylophoneApp extends StatelessWidget {
                     backgroundColor: Colors.green
                 ),
                 onPressed: (){
-                  final player = AudioPlayer();
-                  player.play(AssetSource('note3.wav'));
+                  playSound('note3.wav');
                 },
                 child: Text("Song3"),
               ),
@@ -52,8 +50,7 @@ class XylophoneApp extends StatelessWidget {
                     backgroundColor: Colors.blue
                 ),
                 onPressed: (){
-                  final player = AudioPlayer();
-                  player.play(AssetSource('note4.wav'));
+                  playSound('note4.wav');
                 },
                 child: Text("Song4"),
               ),
@@ -62,8 +59,7 @@ class XylophoneApp extends StatelessWidget {
                     backgroundColor: Colors.teal
                 ),
                 onPressed: (){
-                  final player = AudioPlayer();
-                  player.play(AssetSource('note5.wav'));
+                  playSound('note5.wav');
                 },
                 child: Text("Song5"),
               ),
@@ -72,8 +68,7 @@ class XylophoneApp extends StatelessWidget {
                     backgroundColor: Colors.cyan
                 ),
                 onPressed: (){
-                  final player = AudioPlayer();
-                  player.play(AssetSource('note6.wav'));
+                  playSound('note6.wav');
                 },
                 child: Text("Song6"),
               ),
@@ -82,8 +77,7 @@ class XylophoneApp extends StatelessWidget {
                     backgroundColor: Colors.deepPurpleAccent
                 ),
                 onPressed: (){
-                  final player = AudioPlayer();
-                  player.play(AssetSource('note7.wav'));
+                  playSound('note7.wav');
                 },
                 child: Text("Song7"),
               ),
