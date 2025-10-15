@@ -16,25 +16,34 @@ class XylophoneApp extends StatelessWidget {
       home: Scaffold(
         body: SafeArea(
           child: Column(
+            
             children: [
-              TextButton(
+              Container(
+                width: 1000,
+                height: 100,
+                child: TextButton(
 
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.red
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.red
+                  ),
+                  onPressed: (){
+                    playSound('note1.wav');
+                  },
+                  child: Text("Song1"),
                 ),
-                onPressed: (){
-                  playSound('note1.wav');
-                },
-                child: Text("Song1"),
               ),
-              TextButton(
-                style: TextButton.styleFrom(
-                    backgroundColor: Colors.yellow
+              Container(
+                width: 1000,
+                height: 100,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                      backgroundColor: Colors.yellow
+                  ),
+                  onPressed: (){
+                    playSound('note2.wav');
+                  },
+                  child: Text("Song2"),
                 ),
-                onPressed: (){
-                  playSound('note2.wav');
-                },
-                child: Text("Song2"),
               ),
               TextButton(
                 style: TextButton.styleFrom(
