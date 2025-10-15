@@ -20,9 +20,7 @@ class XylophoneApp extends StatelessWidget {
           child: Column(
             
             children: [
-              Container(
-                width: 1000,
-                height: 70,
+              Expanded(
                 child: TextButton(
 
                   style: TextButton.styleFrom(
@@ -34,9 +32,7 @@ class XylophoneApp extends StatelessWidget {
                   child: Text("Song1"),
                 ),
               ),
-              Container(
-                width: 1000,
-                height: 90,
+              Expanded(
                 child: TextButton(
                   style: TextButton.styleFrom(
                       backgroundColor: Colors.yellow
@@ -47,9 +43,7 @@ class XylophoneApp extends StatelessWidget {
                   child: Text("Song2"),
                 ),
               ),
-              Container(
-                width: 1000,
-                height: 90,
+              Expanded(
                 child: TextButton(
                   style: TextButton.styleFrom(
                       backgroundColor: Colors.green
@@ -60,9 +54,7 @@ class XylophoneApp extends StatelessWidget {
                   child: Text("Song3"),
                 ),
               ),
-              Container(
-                width: 1000,
-                height: 90,
+              Expanded(
                 child: TextButton(
                   style: TextButton.styleFrom(
                       backgroundColor: Colors.blue
@@ -73,9 +65,7 @@ class XylophoneApp extends StatelessWidget {
                   child: Text("Song4"),
                 ),
               ),
-              Container(
-                width: 1000,
-                height: 70,
+              Expanded(
                 child: TextButton(
                   style: TextButton.styleFrom(
                       backgroundColor: Colors.teal
@@ -86,9 +76,7 @@ class XylophoneApp extends StatelessWidget {
                   child: Text("Song5"),
                 ),
               ),
-              Container(
-                width: 1000,
-                height: 70,
+              Expanded(
                 child: TextButton(
                   style: TextButton.styleFrom(
                       backgroundColor: Colors.cyan
@@ -99,9 +87,7 @@ class XylophoneApp extends StatelessWidget {
                   child: Text("Song6"),
                 ),
               ),
-              Container(
-                width: 1000,
-                height: 94,
+              Expanded(
                 child: TextButton(
                   style: TextButton.styleFrom(
                       backgroundColor: Colors.deepPurpleAccent
