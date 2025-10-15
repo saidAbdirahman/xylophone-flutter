@@ -12,8 +12,9 @@ class XylophoneApp extends StatelessWidget {
           child: Column(
             children: [
               TextButton(
-                style: ButtonStyle(
 
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.red
                 ),
                 onPressed: (){
                   final player = AudioPlayer();
