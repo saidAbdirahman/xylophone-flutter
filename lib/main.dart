@@ -5,7 +5,7 @@ void main() => runApp(XylophoneApp());
 
 class XylophoneApp extends StatelessWidget {
 
-  void playSound(sound){
+  void playSound(String sound){
     final player = AudioPlayer();
     player.play(AssetSource(sound));
   }
