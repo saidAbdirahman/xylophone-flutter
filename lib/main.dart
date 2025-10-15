@@ -14,13 +14,14 @@ class XylophoneApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
             
             children: [
               Container(
                 width: 1000,
-                height: 100,
+                height: 70,
                 child: TextButton(
 
                   style: TextButton.styleFrom(
@@ -34,7 +35,7 @@ class XylophoneApp extends StatelessWidget {
               ),
               Container(
                 width: 1000,
-                height: 100,
+                height: 90,
                 child: TextButton(
                   style: TextButton.styleFrom(
                       backgroundColor: Colors.yellow
@@ -45,50 +46,70 @@ class XylophoneApp extends StatelessWidget {
                   child: Text("Song2"),
                 ),
               ),
-              TextButton(
-                style: TextButton.styleFrom(
-                    backgroundColor: Colors.green
+              Container(
+                width: 1000,
+                height: 90,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                      backgroundColor: Colors.green
+                  ),
+                  onPressed: (){
+                    playSound('note3.wav');
+                  },
+                  child: Text("Song3"),
                 ),
-                onPressed: (){
-                  playSound('note3.wav');
-                },
-                child: Text("Song3"),
               ),
-              TextButton(
-                style: TextButton.styleFrom(
-                    backgroundColor: Colors.blue
+              Container(
+                width: 1000,
+                height: 90,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                      backgroundColor: Colors.blue
+                  ),
+                  onPressed: (){
+                    playSound('note4.wav');
+                  },
+                  child: Text("Song4"),
                 ),
-                onPressed: (){
-                  playSound('note4.wav');
-                },
-                child: Text("Song4"),
               ),
-              TextButton(
-                style: TextButton.styleFrom(
-                    backgroundColor: Colors.teal
+              Container(
+                width: 1000,
+                height: 70,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                      backgroundColor: Colors.teal
+                  ),
+                  onPressed: (){
+                    playSound('note5.wav');
+                  },
+                  child: Text("Song5"),
                 ),
-                onPressed: (){
-                  playSound('note5.wav');
-                },
-                child: Text("Song5"),
               ),
-              TextButton(
-                style: TextButton.styleFrom(
-                    backgroundColor: Colors.cyan
+              Container(
+                width: 1000,
+                height: 70,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                      backgroundColor: Colors.cyan
+                  ),
+                  onPressed: (){
+                    playSound('note6.wav');
+                  },
+                  child: Text("Song6"),
                 ),
-                onPressed: (){
-                  playSound('note6.wav');
-                },
-                child: Text("Song6"),
               ),
-              TextButton(
-                style: TextButton.styleFrom(
-                    backgroundColor: Colors.deepPurpleAccent
+              Container(
+                width: 1000,
+                height: 94,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                      backgroundColor: Colors.deepPurpleAccent
+                  ),
+                  onPressed: (){
+                    playSound('note7.wav');
+                  },
+                  child: Text("Song7"),
                 ),
-                onPressed: (){
-                  playSound('note7.wav');
-                },
-                child: Text("Song7"),
               ),
             ],
           ),
