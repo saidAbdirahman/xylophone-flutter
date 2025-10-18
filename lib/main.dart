@@ -37,6 +37,12 @@ class XylophoneApp extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               buildKey(),
+              buildKey(),
+              buildKey(),
+              buildKey(),
+              buildKey(),
+              buildKey(),
+              buildKey(),
 
             ],
           ),
