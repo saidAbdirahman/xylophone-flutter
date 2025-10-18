@@ -22,7 +22,7 @@ class XylophoneApp extends StatelessWidget {
         },
         child: Text("Song1"),
       ),
-    ),
+    );
     return 1;
   }
 
