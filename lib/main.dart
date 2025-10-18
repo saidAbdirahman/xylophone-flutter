@@ -10,8 +10,8 @@ class XylophoneApp extends StatelessWidget {
     player.play(AssetSource(sound));
   }
 
-  String buildKey(){
-    Expanded(
+  Expanded buildKey(){
+    return Expanded(
       child: TextButton(
 
         style: TextButton.styleFrom(
@@ -23,7 +23,7 @@ class XylophoneApp extends StatelessWidget {
         child: Text("Song1"),
       ),
     );
-    return 1;
+
   }
 
   @override
