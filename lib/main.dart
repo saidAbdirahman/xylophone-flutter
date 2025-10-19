@@ -39,12 +39,12 @@ class XylophoneApp extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               buildKey(Colors.blue, 'note1.wav'),
-              // buildKey(),
-              // buildKey(),
-              // buildKey(),
-              // buildKey(),
-              // buildKey(),
-              // buildKey(),
+              buildKey(Colors.teal, 'note2.wav'),
+              buildKey(Colors.green, 'note3.wav'),
+              buildKey(Colors.red, 'note4.wav'),
+              buildKey(Colors.white30, 'note5.wav'),
+              buildKey(Colors.deepPurpleAccent, 'note6.wav'),
+              buildKey(Colors.yellow, 'note7.wav'),
 
             ],
           ),
